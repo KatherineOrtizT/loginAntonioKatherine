@@ -14,6 +14,10 @@
     if(isset($_POST["NUMpreguntas"])){
         $rondas=$_POST["preguntas"];
         $_SESSION["oportunidades"]=$rondas;
+        if($_POST["radio"]=="no"){
+            $_SESSION["ResultadoPartida"]="Tienes que ser mayor de edad";
+            header("location:principal.php");
+        }
     }else{
         $_SESSION["oportunidades"]--;
         if($_SESSION["oportunidades"]==0){

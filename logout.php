@@ -3,6 +3,7 @@
  setcookie("navegador",$navegador, time()-5);
  setcookie("so",$SO, time()-5);
  setcookie("gps",$GPS, time()-5);
-
+ session_start();
+    session_destroy();
 header("location:login.php");
 ?>

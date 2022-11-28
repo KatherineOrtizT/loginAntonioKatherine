@@ -43,43 +43,23 @@ if(isset($_SESSION["ResultadoPartida"])){
                 <div class="titulo">
                     <h3>Adivino Tu Edad</h3>
                 </div>
-                <form>
+                <form  action="juego.php" method="post">
                     <h3>¿Eres mayor de edad?</h3><br>   
                     <table><tr>
                       <td><label for="si">SI</label></td>
-                      <td><input id="si" type="radio" name="r" value="1" checked></td>
+                      <td><input id="si" type="radio" name="radio" value="1" checked></td>
                     </tr>
                     <tr>
                       <td><label for="no">NO</label></td>
-                      <td><input id="si" type="radio" name="r" value="2"><br></td>
+                      <td><input id="si" type="radio" name="radio" value="no"><br></td>
                     </tr></table>               
                     
-                   
-                  
-
-                   <input type="submit" name="respuesta" value="enviar">
-                </form>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div id="contenedor">
-        <div id="central">
-            <div id="login">
-                <form action="juego.php" method="post">
                     <h3>¿En cuantas oportunidades?</h3><br>
                     <input id="si" type="number" name="preguntas"><br>
                    <input type="submit" name="NUMpreguntas" value="enviar">
                 </form>
             </div>
         </div>
-    </div>
-  
-
-
-    
+    </div>    
 </body>
 </html>
