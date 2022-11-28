@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+  <!-- barra de navegacion -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Perfil</a>
   <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,7 +32,7 @@
 </nav>
 
 <?php
-
+// imprime los datos
 session_start(); 
         echo "<h1>". $_SESSION['correoUsuario']."<br> </h1>";
         echo "<h1>". $_SESSION['nombreUsuario']."<br> </h1>";

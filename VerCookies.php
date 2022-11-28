@@ -30,7 +30,7 @@
 </nav>
     <?php
 
-    
+    // imprime las cookies
         if(isset($_COOKIE['fecha'])){
             echo "<h1>". $_COOKIE['fecha']."<br></h1>";
         }

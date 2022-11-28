@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- depende del boton del usuario te da mas o menos numeros -->
     <?php
     session_start();  
     $rondas=0;
@@ -24,9 +25,7 @@
             $_SESSION["ResultadoPartida"]="Fin de los intentos ¿Quieres Jugar otra VEZ?";
             header("location:principal.php");
         }
-
     }
-    $aleatorio=mt_rand(18,99);// segun sea mayor o menor
 
     if(isset($_POST["mayor"])){
         $base=$_POST["base"];
@@ -38,14 +37,14 @@
     }
     if(isset($_POST["acertaste"])){
         
-        $_SESSION["ResultadoPartida"]="No se adivino ¿Quieres Jugar otra VEZ?";
+        $_SESSION["ResultadoPartida"]="Muy bien, Acertaste ¿Quieres Jugar otra VEZ?";
      header("location:principal.php");
     }
     ?>
-
+<!-- guardamos las oportunidades en una session si son más de 0 entra en el if -->
    <?php if($_SESSION["oportunidades"]!=0):?>
    
-    
+   <!-- formulario del juego  -->
     <div id="contenedor">
         <div id="central">
             <div id="login">

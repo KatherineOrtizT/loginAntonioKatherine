@@ -31,12 +31,14 @@
   </div>
 </nav>
 <?php
+// imprime el resultado de la partida, si acertó o se le terminaron los intentos 
     session_start(); 
-if(isset($_SESSION["ResultadoPartida"])){
-  echo "<div class='titulo'>" .$_SESSION["ResultadoPartida"]."</div>";
-}
+    if(isset($_SESSION["ResultadoPartida"])){
+      echo "<div class='titulo'>" .$_SESSION["ResultadoPartida"]."</div>";
+    }
 ?>
 
+<!-- formluario para empezar el juego -->
 <div id="contenedor">
         <div id="central">
             <div id="login">
