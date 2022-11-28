@@ -22,15 +22,13 @@
         <a class="nav-link" href="logout.php">Cerrar Sesión</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="Usuario.php">Datos de Usuario</a>
+        <a class="nav-link" href="Usuario.php">Datos Usuario</a>
       </li>
     </ul>
   </div>
 </nav>
     <?php
-    
-    // echo $_SESSION["nombreUsuario"]."<br>";
-    // echo $_SESSION['nombreUsuario']."<br>";
+
     
         if(isset($_COOKIE['fecha'])){
             echo $_COOKIE['fecha']."<br>";

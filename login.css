@@ -73,6 +73,11 @@ body {
     font-family: 'Overpass', sans-serif;
     color: #E4E4E4;
 }
+#login input[type=radio] {
+    height: 15px;
+    width: 15px;
+
+}
 
 #login input[type=submit] {
     font-family: 'Overpass', sans-serif;
